@@ -30,6 +30,14 @@ tasks:
     cmds:
       - gotestsum
 
+  test:update-snapshots:
+    desc: Run tests
+    deps: [lint]
+    env:
+      UPDATE_SNAPSHOTS: true
+    cmds:
+      - gotestsum
+
   run:
     desc: Run the app
     cmds:
