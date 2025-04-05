@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=https://taskfile.dev/schema.json
+version: "3"
+
+tasks:
+  default:
+    desc: List all tasks
+    silent: true
+    cmds:
+      - echo $'To list all tasks run:\n\n\t task --list-all\n'
+      - task --list --sort=none
+
+  setup:
+    desc: Install required global Go dependencies
+    cmds:
+      - mise install
+
+  lint:
+    desc: Run linters
+    cmds:
+      - golangci-lint run
+
+  lint:fix:
+    desc: Run Go lint and fix
+    cmds:
+      - golangci-lint run --fix
+
+  test:
+    desc: Run tests
+    deps: [lint]
+    cmds:
+      - gotestsum
+
+  run:
+    desc: Run the app
+    cmds:
+      - go run main.go
+
+  build:
+    desc: Build binary
+    cmds:
+      - go build -o bin/tamjaweb
