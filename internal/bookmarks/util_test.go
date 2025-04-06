@@ -95,6 +95,54 @@ func TestFilterBookmarksByTerm(t *testing.T) {
 			},
 		},
 		{
+			name:       "Filter by title partial match -- lower-case",
+			searchTerm: "github",
+			expectedResults: map[string][]struct {
+				title string
+				url   string
+				path  string
+			}{
+				"TestBrowser1": {
+					{
+						title: "GitHub Homepage",
+						url:   "https://github.com",
+						path:  "Dev/Resources",
+					},
+				},
+				"TestBrowser2": {
+					{
+						title: "GitHub Projects",
+						url:   "https://github.com/projects",
+						path:  "Dev/Projects",
+					},
+				},
+			},
+		},
+		{
+			name:       "Filter by fzf style match",
+			searchTerm: "ghub",
+			expectedResults: map[string][]struct {
+				title string
+				url   string
+				path  string
+			}{
+				"TestBrowser1": {
+					{
+						title: "GitHub Homepage",
+						url:   "https://github.com",
+						path:  "Dev/Resources",
+					},
+				},
+				"TestBrowser2": {
+					{
+						title: "GitHub Projects",
+						url:   "https://github.com/projects",
+						path:  "Dev/Projects",
+					},
+				},
+			},
+		},
+		{
 			name:       "Filter by URL",
 			searchTerm: "stackoverflow",
 			expectedResults: map[string][]struct {
