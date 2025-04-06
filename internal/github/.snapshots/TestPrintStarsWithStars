@@ -1,0 +1,7 @@
++---------------------+-------------------------+----------------------------------------+
+|     REPOSITORY      |       DESCRIPTION       |                  URL                   |
++---------------------+-------------------------+----------------------------------------+
+| octocat/Hello-World | A test repository       | https://github.com/octocat/Hello-World |
+| another/repo        | Another test repository | https://github.com/another/repo        |
++---------------------+-------------------------+----------------------------------------+
+
