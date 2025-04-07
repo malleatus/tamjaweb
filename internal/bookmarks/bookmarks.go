@@ -3,11 +3,11 @@ package bookmarks
 import (
 	"bytes"
 	"fmt"
-	"text/tabwriter"
 
 	"github.com/charmbracelet/log"
 	"github.com/malleatus/tamjaweb/internal/browser"
 	"github.com/malleatus/tamjaweb/internal/fzf"
+	"github.com/olekukonko/tablewriter"
 )
 
 type Options struct {
@@ -74,34 +74,37 @@ func FilterBookmarksByTerm(bookmarks map[string][]browser.Bookmark, term string)
 
 // prints the bookmarks in a tabular format
 func PrintBookmarks(bookmarks map[string][]browser.Bookmark) (string, error) {
+	if len(bookmarks) == 0 {
+		return "No bookmarks found", nil
+	}
+
 	var buf bytes.Buffer
-	w := tabwriter.NewWriter(&buf, 0, 0, 2, ' ', 0)
+	table := tablewriter.NewWriter(&buf)
 
-	if _, err := fmt.Fprintln(w, "Browser\tTitle\tURL\tFolder\tDate Added"); err != nil {
-		return "", fmt.Errorf("failed to write header: %w", err)
-	}
-	if _, err := fmt.Fprintln(w, "-------\t-----\t---\t------\t----------"); err != nil {
-		return "", fmt.Errorf("failed to write separator: %w", err)
-	}
+	table.SetHeader([]string{"Browser", "Title", "URL", "Folder", "Date Added"})
+	table.SetAutoWrapText(true)
+	table.SetColumnAlignment([]int{
+		tablewriter.ALIGN_LEFT,
+		tablewriter.ALIGN_LEFT,
+		tablewriter.ALIGN_LEFT,
+		tablewriter.ALIGN_LEFT,
+		tablewriter.ALIGN_LEFT,
+	})
+	table.SetColWidth(50)
 
-	// Format bookmarks from each browser
 	for browserName, bookmarkList := range bookmarks {
 		for _, bookmark := range bookmarkList {
-			if _, err := fmt.Fprintf(w, "%s\t%s\t%s\t%s\t%s\n",
+			table.Append([]string{
 				browserName,
 				bookmark.Title,
 				bookmark.URL,
 				bookmark.FolderPath,
 				bookmark.DateAdded.Format("2006-01-02 15:04:05"),
-			); err != nil {
-				return "", fmt.Errorf("failed to write bookmark: %w", err)
-			}
+			})
 		}
 	}
 
-	if err := w.Flush(); err != nil {
-		return "", fmt.Errorf("failed to flush output: %w", err)
-	}
+	table.Render()
 
 	return buf.String(), nil
 }
