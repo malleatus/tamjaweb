@@ -1,0 +1,41 @@
+linters:
+  # Enable specific linters
+  enable:
+    # Code correctness
+    - errcheck
+    - govet
+    - staticcheck
+    - gosec
+    - bodyclose
+
+    # Code simplicity
+    - gosimple
+    - unused
+    - ineffassign
+
+    # Code style
+    - gofmt
+    - goimports
+    - revive
+
+    # Performance
+    - prealloc
+    - fieldalignment
+
+  # Disable specific linters
+  disable:
+    - exhaustruct
+    - funlen
+    - gochecknoglobals
+    - depguard
+
+linters-settings:
+  govet:
+    enable:
+      - fieldalignment
+    check-shadowing: true
+
+  gosec:
+    excludes:
+      # Ignores "Errors unhandled" since errcheck handles this better
+      - G104
