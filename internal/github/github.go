@@ -16,7 +16,7 @@ type Options struct {
 	User string
 }
 
-// Star represents a browser bookmark
+// Star represents a starred repository on GitHub
 type Star struct {
 	Repo        string
 	Description string
