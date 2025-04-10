@@ -18,6 +18,7 @@ type Options struct {
 
 // Star represents a starred repository on GitHub
 type Star struct {
+	Stargazer   string
 	Repo        string
 	Description string
 	URL         string
@@ -52,6 +53,7 @@ func GetAllStars(user string) ([]Star, error) {
 			}
 
 			stars = append(stars, Star{
+				Stargazer:   user,
 				Repo:        repo,
 				Description: description,
 				URL:         repoURL,
@@ -71,9 +73,10 @@ func PrintStars(stars []Star) (string, error) {
 	var buf bytes.Buffer
 	table := tablewriter.NewWriter(&buf)
 
-	table.SetHeader([]string{"Repository", "Description", "URL"})
+	table.SetHeader([]string{"Stargazer", "Repository", "Description", "URL"})
 	table.SetAutoWrapText(true)
 	table.SetColumnAlignment([]int{
+		tablewriter.ALIGN_LEFT,
 		tablewriter.ALIGN_LEFT,
 		tablewriter.ALIGN_LEFT,
 		tablewriter.ALIGN_LEFT,
@@ -83,6 +86,7 @@ func PrintStars(stars []Star) (string, error) {
 	// Add data rows
 	for _, star := range stars {
 		table.Append([]string{
+			star.Stargazer,
 			star.Repo,
 			star.Description,
 			star.URL,
