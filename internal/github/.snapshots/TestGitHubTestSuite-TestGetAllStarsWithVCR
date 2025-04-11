@@ -1,182 +1,212 @@
 ([]github.Star) (len=30) {
   (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=11) "gorilla/mux",
+    Description: (string) (len=99) "Package gorilla/mux is a powerful HTTP router and URL matcher for building Go web servers with 🦍",
+    URL: (string) (len=30) "https://github.com/gorilla/mux",
+    StarredAt: (string) (len=10) "2025-04-07"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
     Repo: (string) (len=13) "dnaeon/go-vcr",
     Description: (string) (len=83) "Record and replay your HTTP interactions for fast, deterministic and accurate tests",
     URL: (string) (len=32) "https://github.com/dnaeon/go-vcr",
     StarredAt: (string) (len=10) "2025-04-06"
   },
   (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
     Repo: (string) (len=29) "migueleliasweb/go-github-mock",
     Description: (string) (len=63) "A library to aid unittesting code that uses Golang's Github SDK",
     URL: (string) (len=48) "https://github.com/migueleliasweb/go-github-mock",
     StarredAt: (string) (len=10) "2025-04-06"
   },
   (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
     Repo: (string) (len=22) "olekukonko/tablewriter",
     Description: (string) (len=21) "ASCII table in golang",
     URL: (string) (len=41) "https://github.com/olekukonko/tablewriter",
     StarredAt: (string) (len=10) "2025-04-06"
   },
   (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
     Repo: (string) (len=16) "google/go-github",
     Description: (string) (len=42) "Go library for accessing the GitHub v3 API",
     URL: (string) (len=35) "https://github.com/google/go-github",
     StarredAt: (string) (len=10) "2025-04-06"
   },
   (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
     Repo: (string) (len=17) "charmbracelet/log",
     Description: (string) (len=43) "A minimal, colorful Go logging library 🪵",
     URL: (string) (len=36) "https://github.com/charmbracelet/log",
     StarredAt: (string) (len=10) "2025-04-05"
   },
   (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
     Repo: (string) (len=16) "stretchr/testify",
     Description: (string) (len=86) "A toolkit with common assertions and mocks that plays nicely with the standard library",
     URL: (string) (len=35) "https://github.com/stretchr/testify",
     StarredAt: (string) (len=10) "2025-04-05"
   },
   (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
     Repo: (string) (len=24) "github/github-mcp-server",
     Description: (string) (len=28) "GitHub's official MCP Server",
     URL: (string) (len=43) "https://github.com/github/github-mcp-server",
     StarredAt: (string) (len=10) "2025-04-04"
   },
   (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
     Repo: (string) (len=23) "charmbracelet/bubbletea",
     Description: (string) (len=36) "A powerful little TUI framework 🏗",
     URL: (string) (len=42) "https://github.com/charmbracelet/bubbletea",
     StarredAt: (string) (len=10) "2025-04-04"
   },
   (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
     Repo: (string) (len=16) "mark3labs/mcp-go",
     Description: (string) (len=148) "A Go implementation of the Model Context Protocol (MCP), enabling seamless integration between LLM applications and external data sources and tools.",
     URL: (string) (len=35) "https://github.com/mark3labs/mcp-go",
     StarredAt: (string) (len=10) "2025-04-04"
   },
   (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
     Repo: (string) (len=15) "abiosoft/colima",
     Description: (string) (len=58) "Container runtimes on macOS (and Linux) with minimal setup",
     URL: (string) (len=34) "https://github.com/abiosoft/colima",
     StarredAt: (string) (len=10) "2025-04-01"
   },
   (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
     Repo: (string) (len=13) "conikeec/mcpr",
     Description: (string) (len=51) "Model Context Protocol (MCP) implementation in Rust",
     URL: (string) (len=32) "https://github.com/conikeec/mcpr",
     StarredAt: (string) (len=10) "2025-03-30"
   },
   (github.Star) {
-    Repo: (string) (len=34) "modelcontextprotocol/specification",
-    Description: (string) (len=47) "The specification of the Model Context Protocol",
-    URL: (string) (len=53) "https://github.com/modelcontextprotocol/specification",
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=41) "modelcontextprotocol/modelcontextprotocol",
+    Description: (string) (len=63) "Specification and\u00a0documentation for the Model Context Protocol",
+    URL: (string) (len=60) "https://github.com/modelcontextprotocol/modelcontextprotocol",
     StarredAt: (string) (len=10) "2025-03-27"
   },
   (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
     Repo: (string) (len=31) "golang-standards/project-layout",
     Description: (string) (len=26) "Standard Go Project Layout",
     URL: (string) (len=50) "https://github.com/golang-standards/project-layout",
     StarredAt: (string) (len=10) "2025-03-27"
   },
   (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
     Repo: (string) (len=23) "akinsho/bufferline.nvim",
     Description: (string) (len=30) "A snazzy bufferline for Neovim",
     URL: (string) (len=42) "https://github.com/akinsho/bufferline.nvim",
     StarredAt: (string) (len=10) "2025-03-26"
   },
   (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
     Repo: (string) (len=19) "koki-develop/go-fzf",
     Description: (string) (len=34) "🔍 Fuzzy Finder CLI and Library.",
     URL: (string) (len=38) "https://github.com/koki-develop/go-fzf",
     StarredAt: (string) (len=10) "2025-03-26"
   },
   (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
     Repo: (string) (len=27) "langchain-ai/agent-protocol",
     Description: (string) "",
     URL: (string) (len=46) "https://github.com/langchain-ai/agent-protocol",
     StarredAt: (string) (len=10) "2025-03-25"
   },
   (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
     Repo: (string) (len=13) "deanishe/awgo",
     Description: (string) (len=37) "Go library for Alfred 3 + 4 workflows",
     URL: (string) (len=32) "https://github.com/deanishe/awgo",
     StarredAt: (string) (len=10) "2025-03-25"
   },
   (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
     Repo: (string) (len=36) "jopemachine/alfred-chromium-workflow",
     Description: (string) (len=44) "Chromium based browser workflow for Alfred 5",
     URL: (string) (len=55) "https://github.com/jopemachine/alfred-chromium-workflow",
     StarredAt: (string) (len=10) "2025-03-25"
   },
   (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
     Repo: (string) (len=10) "sharkdp/fd",
     Description: (string) (len=54) "A simple, fast and user-friendly alternative to 'find'",
     URL: (string) (len=29) "https://github.com/sharkdp/fd",
     StarredAt: (string) (len=10) "2025-03-24"
   },
   (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
     Repo: (string) (len=16) "uutils/diffutils",
     Description: (string) (len=40) "Drop-in replacement of diffutils in Rust",
     URL: (string) (len=35) "https://github.com/uutils/diffutils",
     StarredAt: (string) (len=10) "2025-03-24"
   },
   (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
     Repo: (string) (len=16) "uutils/coreutils",
     Description: (string) (len=48) "Cross-platform Rust rewrite of the GNU coreutils",
     URL: (string) (len=35) "https://github.com/uutils/coreutils",
     StarredAt: (string) (len=10) "2025-03-24"
   },
   (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
     Repo: (string) (len=29) "release-it-plugins/workspaces",
     Description: (string) (len=59) "A release-it plugin for publishing projects with workspaces",
     URL: (string) (len=48) "https://github.com/release-it-plugins/workspaces",
     StarredAt: (string) (len=10) "2025-03-23"
   },
   (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
     Repo: (string) (len=15) "malleatus/vadnu",
     Description: (string) (len=85) "What's next? A repo for supporting and documenting the PKM for @hjdivad and @rwjblue.",
     URL: (string) (len=34) "https://github.com/malleatus/vadnu",
     StarredAt: (string) (len=10) "2025-03-23"
   },
   (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
     Repo: (string) (len=25) "malleatus/shared_binutils",
     Description: (string) (len=57) "Shared crates for consumption in custom dotfiles binutils",
     URL: (string) (len=44) "https://github.com/malleatus/shared_binutils",
     StarredAt: (string) (len=10) "2025-03-23"
   },
   (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
     Repo: (string) (len=34) "tcmmichaelb139/obsidian-tokyonight",
     Description: (string) (len=30) "Tokyo Night theme for Obsidian",
     URL: (string) (len=53) "https://github.com/tcmmichaelb139/obsidian-tokyonight",
     StarredAt: (string) (len=10) "2025-03-22"
   },
   (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
     Repo: (string) (len=26) "mirnovov/obsidian-homepage",
     Description: (string) (len=112) "An Obsidian plugin that opens a specified note, canvas, or workspace on startup, instead of the most recent one.",
     URL: (string) (len=45) "https://github.com/mirnovov/obsidian-homepage",
     StarredAt: (string) (len=10) "2025-03-22"
   },
   (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
     Repo: (string) (len=29) "aaaaalexis/obsidian-cupertino",
     Description: (string) (len=108) "A native look and feel Obsidian theme designed for a clean, focused, and mobile-friendly writing experience.",
     URL: (string) (len=48) "https://github.com/aaaaalexis/obsidian-cupertino",
     StarredAt: (string) (len=10) "2025-03-22"
   },
   (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
     Repo: (string) (len=16) "wdanilo/crabtime",
     Description: (string) "",
     URL: (string) (len=35) "https://github.com/wdanilo/crabtime",
     StarredAt: (string) (len=10) "2025-03-22"
   },
   (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
     Repo: (string) (len=26) "Feel-ix-343/markdown-oxide",
     Description: (string) (len=15) "PKM for the LSP",
     URL: (string) (len=45) "https://github.com/Feel-ix-343/markdown-oxide",
     StarredAt: (string) (len=10) "2025-03-14"
-  },
-  (github.Star) {
-    Repo: (string) (len=19) "watchexec/watchexec",
-    Description: (string) (len=51) "Executes commands in response to file modifications",
-    URL: (string) (len=38) "https://github.com/watchexec/watchexec",
-    StarredAt: (string) (len=10) "2025-03-12"
   }
 }

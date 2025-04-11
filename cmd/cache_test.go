@@ -114,7 +114,6 @@ func (s *CacheCommandTestSuite) TestCacheCommandClear() {
 	s.Contains(s.stdout.String(), "Cache cleared successfully")
 }
 
-// TestCacheCommandInSubTests runs the tests using Go's subtests pattern
 func TestCacheCommand(t *testing.T) {
 	suite.Run(t, new(CacheCommandTestSuite))
 }

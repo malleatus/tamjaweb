@@ -52,7 +52,8 @@ func (s *CacheTestSuite) Test_GetCacheDir() {
 	s.Equal(filepath.Join(s.tempHomeDir, ".cache/tamjaweb"), cacheDir)
 }
 
-func (s *CacheTestSuite) Test_New(t *testing.T) {
+func (s *CacheTestSuite) Test_New() {
+	t := s.T()
 	// Create a temporary directory to use as the home directory
 	tempHome := t.TempDir()
 
@@ -70,7 +71,9 @@ func (s *CacheTestSuite) Test_New(t *testing.T) {
 	assert.NoError(t, err, "Cache directory should exist")
 }
 
-func (s *CacheTestSuite) Test_CacheStore_Read(t *testing.T) {
+func (s *CacheTestSuite) Test_CacheStore_Read() {
+	t := s.T()
+
 	t.Run("empty cache", func(t *testing.T) {
 		cache, err := New[TestItem]("empty-cache.json")
 		s.NoError(err)
@@ -98,7 +101,7 @@ func (s *CacheTestSuite) Test_CacheStore_Read(t *testing.T) {
 	})
 }
 
-func (s *CacheTestSuite) Test_CacheStore_Write(t *testing.T) {
+func (s *CacheTestSuite) Test_CacheStore_Write() {
 	cache, err := New[TestItem]("write-test.json")
 	s.NoError(err)
 
@@ -108,21 +111,21 @@ func (s *CacheTestSuite) Test_CacheStore_Write(t *testing.T) {
 	}
 
 	err = cache.Write(items)
-	assert.NoError(t, err)
+	s.NoError(err)
 
 	// Verify the file exists and contains the expected content
 	data, err := os.ReadFile(cache.filePath)
-	assert.NoError(t, err)
-	assert.Contains(t, string(data), `"id": 1`)
-	assert.Contains(t, string(data), `"name": "Item 1"`)
+	s.NoError(err)
+	s.Contains(string(data), `"id": 1`)
+	s.Contains(string(data), `"name": "Item 1"`)
 
 	// Verify we can read the items back
 	readItems, err := cache.Read()
-	assert.NoError(t, err)
-	assert.Equal(t, items, readItems)
+	s.NoError(err)
+	s.Equal(items, readItems)
 }
 
-func (s *CacheTestSuite) Test_CacheStore_UpdateWithFilter(t *testing.T) {
+func (s *CacheTestSuite) Test_CacheStore_UpdateWithFilter() {
 	initialItems := []TestItem{
 		{ID: 1, Name: "Item 1"},
 		{ID: 2, Name: "Item 2"},
@@ -145,16 +148,16 @@ func (s *CacheTestSuite) Test_CacheStore_UpdateWithFilter(t *testing.T) {
 	}
 
 	err = cache.UpdateWithFilter(filter, newItems)
-	assert.NoError(t, err)
+	s.NoError(err)
 
 	// Verify the result
 	items, err := cache.Read()
-	assert.NoError(t, err)
-	assert.Len(t, items, 3) // 3 initial - 1 filtered + 1 new = 3
+	s.NoError(err)
+	s.Len(items, 3) // 3 initial - 1 filtered + 1 new = 3
 
 	// The filtered item (ID=2) should be gone
 	for _, item := range items {
-		assert.NotEqual(t, 2, item.ID)
+		s.NotEqual(2, item.ID)
 	}
 
 	// Check for the new item
@@ -162,9 +165,13 @@ func (s *CacheTestSuite) Test_CacheStore_UpdateWithFilter(t *testing.T) {
 	for _, item := range items {
 		if item.ID == 4 {
 			found = true
-			assert.Equal(t, "Item 4", item.Name)
+			s.Equal("Item 4", item.Name)
 			break
 		}
 	}
-	assert.True(t, found, "New item should be in the cache")
+	s.True(found, "New item should be in the cache")
+}
+
+func TestCacheSuite(t *testing.T) {
+	suite.Run(t, new(CacheTestSuite))
 }

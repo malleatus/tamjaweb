@@ -2,6 +2,7 @@ package github
 
 import (
 	"errors"
+	"testing"
 
 	"github.com/bradleyjkemp/cupaloy/v2"
 	"github.com/google/go-github/v70/github"
@@ -123,4 +124,8 @@ func (s *GitHubTestSuite) TestGetAllStarsWithVCR() {
 	s.NoError(err, "Failed to get stars from GitHub API")
 
 	cupaloy.SnapshotT(s.T(), stars)
+}
+
+func TestGitHubTestSuite(t *testing.T) {
+	suite.Run(t, new(GitHubTestSuite))
 }
