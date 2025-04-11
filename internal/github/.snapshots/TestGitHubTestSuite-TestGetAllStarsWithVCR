@@ -1,13 +1,6 @@
 ([]github.Star) (len=30) {
   (github.Star) {
     Stargazer: (string) (len=7) "rwjblue",
-    Repo: (string) (len=11) "gorilla/mux",
-    Description: (string) (len=99) "Package gorilla/mux is a powerful HTTP router and URL matcher for building Go web servers with 🦍",
-    URL: (string) (len=30) "https://github.com/gorilla/mux",
-    StarredAt: (string) (len=10) "2025-04-07"
-  },
-  (github.Star) {
-    Stargazer: (string) (len=7) "rwjblue",
     Repo: (string) (len=13) "dnaeon/go-vcr",
     Description: (string) (len=83) "Record and replay your HTTP interactions for fast, deterministic and accurate tests",
     URL: (string) (len=32) "https://github.com/dnaeon/go-vcr",
@@ -85,9 +78,9 @@
   },
   (github.Star) {
     Stargazer: (string) (len=7) "rwjblue",
-    Repo: (string) (len=41) "modelcontextprotocol/modelcontextprotocol",
-    Description: (string) (len=63) "Specification and\u00a0documentation for the Model Context Protocol",
-    URL: (string) (len=60) "https://github.com/modelcontextprotocol/modelcontextprotocol",
+    Repo: (string) (len=34) "modelcontextprotocol/specification",
+    Description: (string) (len=47) "The specification of the Model Context Protocol",
+    URL: (string) (len=53) "https://github.com/modelcontextprotocol/specification",
     StarredAt: (string) (len=10) "2025-03-27"
   },
   (github.Star) {
@@ -208,5 +201,12 @@
     Description: (string) (len=15) "PKM for the LSP",
     URL: (string) (len=45) "https://github.com/Feel-ix-343/markdown-oxide",
     StarredAt: (string) (len=10) "2025-03-14"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=19) "watchexec/watchexec",
+    Description: (string) (len=51) "Executes commands in response to file modifications",
+    URL: (string) (len=38) "https://github.com/watchexec/watchexec",
+    StarredAt: (string) (len=10) "2025-03-12"
   }
 }
