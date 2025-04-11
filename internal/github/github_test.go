@@ -2,6 +2,7 @@ package github
 
 import (
 	"errors"
+	"os"
 	"testing"
 
 	"github.com/bradleyjkemp/cupaloy/v2"
@@ -13,6 +14,8 @@ import (
 type GitHubTestSuite struct {
 	suite.Suite
 
+	originalHomeDir           string
+	tempHomeDir               string
 	originalExecRunner        ExecRunner
 	originalBuildGitHubClient func() *github.Client
 	mockRunner                *mockRunner
@@ -40,12 +43,29 @@ func (s *GitHubTestSuite) SetupTest() {
 	s.mockRunner = &mockRunner{}
 
 	DefaultExecRunner = s.mockRunner
+
+	homeDir := os.Getenv("HOME")
+
+	s.originalHomeDir = homeDir
+	tempHomeDir, err := os.MkdirTemp("", "tamjaweb-test-cache")
+	s.NoError(err)
+
+	err = os.Setenv("HOME", tempHomeDir)
+	s.NoError(err)
+	s.tempHomeDir = tempHomeDir
 }
 
 // TearDownTest runs after each test in the suite.
 func (s *GitHubTestSuite) TearDownTest() {
 	DefaultExecRunner = s.originalExecRunner
 	BuildGitHubClient = s.originalBuildGitHubClient
+
+	err := os.Setenv("HOME", s.originalHomeDir)
+	s.NoError(err)
+	defer func() {
+		err := os.RemoveAll(s.tempHomeDir)
+		s.NoError(err)
+	}()
 }
 
 // TestGetGitHubToken_Success: an example test
@@ -97,8 +117,12 @@ func (s *GitHubTestSuite) TestPrintStarsWithStars() {
 }
 
 func (s *GitHubTestSuite) TestGetAllStarsWithVCR() {
+	mode := recorder.ModeRecordOnce
+	if os.Getenv("CI") == "true" {
+		mode = recorder.ModeReplayOnly
+	}
 	opts := []recorder.Option{
-		recorder.WithMode(recorder.ModeRecordOnce),
+		recorder.WithMode(mode),
 		// NOTE: without this flag set, vcr will take as long as the original
 		// request that was recorded did
 		recorder.WithSkipRequestLatency(true),

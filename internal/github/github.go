@@ -35,6 +35,7 @@ func GetAllStars(user string) ([]Star, error) {
 		return nil, fmt.Errorf("error fetching cached stars: %v", err)
 	}
 
+	// FIXME: need to filter these to the specified user
 	if len(stars) == 0 {
 		// no cached stars, do the lookup blocking
 		stars, err = fetchStars(user)
