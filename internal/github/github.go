@@ -30,6 +30,28 @@ var BuildGitHubClient = func() *github.Client {
 }
 
 func GetAllStars(user string) ([]Star, error) {
+	stars, err := GetCachedStars()
+	if err != nil {
+		return nil, fmt.Errorf("error fetching cached stars: %v", err)
+	}
+
+	if len(stars) == 0 {
+		// no cached stars, do the lookup blocking
+		stars, err = fetchStars(user)
+		if err != nil {
+			return nil, fmt.Errorf("error fetching stars from GitHub: %v", err)
+		}
+
+		err = WriteCachedStars(user, stars)
+		if err != nil {
+			return nil, fmt.Errorf("error writing stars to cache: %v", err)
+		}
+	}
+
+	return stars, nil
+}
+
+func fetchStars(user string) ([]Star, error) {
 	var stars []Star
 
 	ctx := context.Background()
