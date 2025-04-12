@@ -38,6 +38,14 @@ tasks:
     cmds:
       - gotestsum
 
+  test:update-fixtures:
+    desc: Remove vcr fixtures and rerecord them
+    deps: [lint]
+    cmds:
+      - echo "Finding and removing VCR fixture directories..."
+      - fd "fixtures" --type directory | xargs rm -rf
+      - gotestsum
+
   run:
     desc: Run the app
     cmds:
