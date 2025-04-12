@@ -30,20 +30,29 @@ tasks:
     cmds:
       - gotestsum
 
-  test:update-snapshots:
+  clear:vcr:
+    cmds:
+      - echo "Finding and removing VCR fixture directories..."
+      - fd "fixtures" --type directory | xargs rm -rf
+
+  test:update:
+    env:
+      UPDATE_SNAPSHOTS: true
+    cmds:
+      - task: clear:vcr
+      - task: update:snapshots
+
+  test:update:snapshots:
     desc: Run tests
-    deps: [lint]
     env:
       UPDATE_SNAPSHOTS: true
     cmds:
       - gotestsum
 
-  test:update-fixtures:
+  test:update:fixtures:
     desc: Remove vcr fixtures and rerecord them
-    deps: [lint]
+    deps: [clear:vcr]
     cmds:
-      - echo "Finding and removing VCR fixture directories..."
-      - fd "fixtures" --type directory | xargs rm -rf
       - gotestsum
 
   run:
