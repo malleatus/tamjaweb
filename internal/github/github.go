@@ -59,37 +59,60 @@ func GetAllStars(user string) ([]Star, error) {
 	return stars, nil
 }
 
+// MaxPages limits the number of pages fetched for starred repos. This is only
+// really used in tests. Value of 0 means no limit (fetch all pages).
+var MaxPages int = 0
+
 func fetchStars(user string) ([]Star, error) {
 	var stars []Star
 
 	ctx := context.Background()
 	client := BuildGitHubClient()
 
-	starredRepos, _, err := client.Activity.ListStarred(ctx, user, nil)
-	if err != nil {
-		return nil, fmt.Errorf("error fetching starred repositories: %v", err)
+	opts := &github.ActivityListStarredOptions{
+		Sort:      "created",
+		Direction: "asc",
+		ListOptions: github.ListOptions{
+			Page: 1,
+		},
 	}
 
-	for _, starred := range starredRepos {
-		if starred.Repository != nil {
-			var repo, description, repoURL, starredAt string
-
-			repo = *starred.Repository.FullName
-			repoURL = *starred.Repository.HTMLURL
-			starredAt = starred.StarredAt.Format(time.DateOnly)
-
-			if starred.Repository.Description != nil {
-				description = *starred.Repository.Description
-			}
-
-			stars = append(stars, Star{
-				Stargazer:   user,
-				Repo:        repo,
-				Description: description,
-				URL:         repoURL,
-				StarredAt:   starredAt,
-			})
+	pageCount := 0
+	for {
+		starredRepos, resp, err := client.Activity.ListStarred(ctx, user, opts)
+		if err != nil {
+			return nil, fmt.Errorf("error fetching starred repositories: %v", err)
 		}
+
+		for _, starred := range starredRepos {
+			if starred.Repository != nil {
+				var repo, description, repoURL, starredAt string
+
+				repo = *starred.Repository.FullName
+				repoURL = *starred.Repository.HTMLURL
+				starredAt = starred.StarredAt.Format(time.DateOnly)
+
+				if starred.Repository.Description != nil {
+					description = *starred.Repository.Description
+				}
+
+				stars = append(stars, Star{
+					Stargazer:   user,
+					Repo:        repo,
+					Description: description,
+					URL:         repoURL,
+					StarredAt:   starredAt,
+				})
+			}
+		}
+		pageCount++
+		if MaxPages > 0 && pageCount > MaxPages {
+			break
+		}
+		if resp.NextPage == 0 {
+			break
+		}
+		opts.Page = resp.NextPage
 	}
 
 	return stars, nil

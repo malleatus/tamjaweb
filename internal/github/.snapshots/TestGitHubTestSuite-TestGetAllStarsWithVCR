@@ -1,212 +1,632 @@
-([]github.Star) (len=30) {
+([]github.Star) (len=90) {
   (github.Star) {
     Stargazer: (string) (len=7) "rwjblue",
-    Repo: (string) (len=13) "dnaeon/go-vcr",
-    Description: (string) (len=83) "Record and replay your HTTP interactions for fast, deterministic and accurate tests",
-    URL: (string) (len=32) "https://github.com/dnaeon/go-vcr",
-    StarredAt: (string) (len=10) "2025-04-06"
+    Repo: (string) (len=17) "rubinius/rubinius",
+    Description: (string) (len=30) "The Rubinius Language Platform",
+    URL: (string) (len=36) "https://github.com/rubinius/rubinius",
+    StarredAt: (string) (len=10) "2008-06-05"
   },
   (github.Star) {
     Stargazer: (string) (len=7) "rwjblue",
-    Repo: (string) (len=29) "migueleliasweb/go-github-mock",
-    Description: (string) (len=63) "A library to aid unittesting code that uses Golang's Github SDK",
-    URL: (string) (len=48) "https://github.com/migueleliasweb/go-github-mock",
-    StarredAt: (string) (len=10) "2025-04-06"
+    Repo: (string) (len=35) "technoweenie/restful-authentication",
+    Description: (string) (len=16) "inactive project",
+    URL: (string) (len=54) "https://github.com/technoweenie/restful-authentication",
+    StarredAt: (string) (len=10) "2008-06-05"
   },
   (github.Star) {
     Stargazer: (string) (len=7) "rwjblue",
-    Repo: (string) (len=22) "olekukonko/tablewriter",
-    Description: (string) (len=21) "ASCII table in golang",
-    URL: (string) (len=41) "https://github.com/olekukonko/tablewriter",
-    StarredAt: (string) (len=10) "2025-04-06"
+    Repo: (string) (len=31) "jamesgolick/resource_controller",
+    Description: (string) (len=44) "Rails RESTful controller abstraction plugin.",
+    URL: (string) (len=50) "https://github.com/jamesgolick/resource_controller",
+    StarredAt: (string) (len=10) "2008-06-05"
   },
   (github.Star) {
     Stargazer: (string) (len=7) "rwjblue",
-    Repo: (string) (len=16) "google/go-github",
-    Description: (string) (len=42) "Go library for accessing the GitHub v3 API",
-    URL: (string) (len=35) "https://github.com/google/go-github",
-    StarredAt: (string) (len=10) "2025-04-06"
+    Repo: (string) (len=9) "haml/haml",
+    Description: (string) (len=49) "HTML Abstraction Markup Language - A Markup Haiku",
+    URL: (string) (len=28) "https://github.com/haml/haml",
+    StarredAt: (string) (len=10) "2008-06-05"
   },
   (github.Star) {
     Stargazer: (string) (len=7) "rwjblue",
-    Repo: (string) (len=17) "charmbracelet/log",
-    Description: (string) (len=43) "A minimal, colorful Go logging library 🪵",
-    URL: (string) (len=36) "https://github.com/charmbracelet/log",
-    StarredAt: (string) (len=10) "2025-04-05"
+    Repo: (string) (len=21) "rsanheim/brain_buster",
+    Description: (string) (len=39) "BrainBuster - a logic captcha for Rails",
+    URL: (string) (len=40) "https://github.com/rsanheim/brain_buster",
+    StarredAt: (string) (len=10) "2008-06-05"
   },
   (github.Star) {
     Stargazer: (string) (len=7) "rwjblue",
-    Repo: (string) (len=16) "stretchr/testify",
-    Description: (string) (len=86) "A toolkit with common assertions and mocks that plays nicely with the standard library",
-    URL: (string) (len=35) "https://github.com/stretchr/testify",
-    StarredAt: (string) (len=10) "2025-04-05"
+    Repo: (string) (len=16) "tobi/delayed_job",
+    Description: (string) (len=70) "Database backed asynchronous priority queue -- Extracted from Shopify ",
+    URL: (string) (len=35) "https://github.com/tobi/delayed_job",
+    StarredAt: (string) (len=10) "2008-06-05"
   },
   (github.Star) {
     Stargazer: (string) (len=7) "rwjblue",
-    Repo: (string) (len=24) "github/github-mcp-server",
-    Description: (string) (len=28) "GitHub's official MCP Server",
-    URL: (string) (len=43) "https://github.com/github/github-mcp-server",
-    StarredAt: (string) (len=10) "2025-04-04"
+    Repo: (string) (len=20) "mislav/will_paginate",
+    Description: (string) (len=56) "Pagination library for Rails and other Ruby applications",
+    URL: (string) (len=39) "https://github.com/mislav/will_paginate",
+    StarredAt: (string) (len=10) "2008-06-05"
   },
   (github.Star) {
     Stargazer: (string) (len=7) "rwjblue",
-    Repo: (string) (len=23) "charmbracelet/bubbletea",
-    Description: (string) (len=36) "A powerful little TUI framework 🏗",
-    URL: (string) (len=42) "https://github.com/charmbracelet/bubbletea",
-    StarredAt: (string) (len=10) "2025-04-04"
+    Repo: (string) (len=14) "brynary/webrat",
+    Description: (string) (len=53) "Webrat - Ruby Acceptance Testing for Web applications",
+    URL: (string) (len=33) "https://github.com/brynary/webrat",
+    StarredAt: (string) (len=10) "2008-06-05"
   },
   (github.Star) {
     Stargazer: (string) (len=7) "rwjblue",
-    Repo: (string) (len=16) "mark3labs/mcp-go",
-    Description: (string) (len=148) "A Go implementation of the Model Context Protocol (MCP), enabling seamless integration between LLM applications and external data sources and tools.",
-    URL: (string) (len=35) "https://github.com/mark3labs/mcp-go",
-    StarredAt: (string) (len=10) "2025-04-04"
+    Repo: (string) (len=22) "technoweenie/masochism",
+    Description: (string) (len=58) "ActiveRecord connection proxy for master/slave connections",
+    URL: (string) (len=41) "https://github.com/technoweenie/masochism",
+    StarredAt: (string) (len=10) "2008-06-05"
   },
   (github.Star) {
     Stargazer: (string) (len=7) "rwjblue",
-    Repo: (string) (len=15) "abiosoft/colima",
-    Description: (string) (len=58) "Container runtimes on macOS (and Linux) with minimal setup",
-    URL: (string) (len=34) "https://github.com/abiosoft/colima",
-    StarredAt: (string) (len=10) "2025-04-01"
+    Repo: (string) (len=14) "prawnpdf/prawn",
+    Description: (string) (len=32) "Fast, Nimble PDF Writer for Ruby",
+    URL: (string) (len=33) "https://github.com/prawnpdf/prawn",
+    StarredAt: (string) (len=10) "2008-06-05"
   },
   (github.Star) {
     Stargazer: (string) (len=7) "rwjblue",
-    Repo: (string) (len=13) "conikeec/mcpr",
-    Description: (string) (len=51) "Model Context Protocol (MCP) implementation in Rust",
-    URL: (string) (len=32) "https://github.com/conikeec/mcpr",
-    StarredAt: (string) (len=10) "2025-03-30"
+    Repo: (string) (len=21) "formtastic/formtastic",
+    Description: (string) (len=73) "A Rails form builder plugin with semantically rich and accessible markup.",
+    URL: (string) (len=40) "https://github.com/formtastic/formtastic",
+    StarredAt: (string) (len=10) "2008-06-05"
   },
   (github.Star) {
     Stargazer: (string) (len=7) "rwjblue",
-    Repo: (string) (len=34) "modelcontextprotocol/specification",
-    Description: (string) (len=47) "The specification of the Model Context Protocol",
-    URL: (string) (len=53) "https://github.com/modelcontextprotocol/specification",
-    StarredAt: (string) (len=10) "2025-03-27"
+    Repo: (string) (len=20) "thoughtbot/paperclip",
+    Description: (string) (len=48) "Easy file attachment management for ActiveRecord",
+    URL: (string) (len=39) "https://github.com/thoughtbot/paperclip",
+    StarredAt: (string) (len=10) "2008-06-05"
   },
   (github.Star) {
     Stargazer: (string) (len=7) "rwjblue",
-    Repo: (string) (len=31) "golang-standards/project-layout",
-    Description: (string) (len=26) "Standard Go Project Layout",
-    URL: (string) (len=50) "https://github.com/golang-standards/project-layout",
-    StarredAt: (string) (len=10) "2025-03-27"
+    Repo: (string) (len=18) "ambethia/recaptcha",
+    Description: (string) (len=31) "ReCaptcha helpers for ruby apps",
+    URL: (string) (len=37) "https://github.com/ambethia/recaptcha",
+    StarredAt: (string) (len=10) "2008-06-05"
   },
   (github.Star) {
     Stargazer: (string) (len=7) "rwjblue",
-    Repo: (string) (len=23) "akinsho/bufferline.nvim",
-    Description: (string) (len=30) "A snazzy bufferline for Neovim",
-    URL: (string) (len=42) "https://github.com/akinsho/bufferline.nvim",
-    StarredAt: (string) (len=10) "2025-03-26"
+    Repo: (string) (len=23) "sparklemotion/mechanize",
+    Description: (string) (len=70) "Mechanize is a ruby library that makes automated web interaction easy.",
+    URL: (string) (len=42) "https://github.com/sparklemotion/mechanize",
+    StarredAt: (string) (len=10) "2008-06-05"
   },
   (github.Star) {
     Stargazer: (string) (len=7) "rwjblue",
-    Repo: (string) (len=19) "koki-develop/go-fzf",
-    Description: (string) (len=34) "🔍 Fuzzy Finder CLI and Library.",
-    URL: (string) (len=38) "https://github.com/koki-develop/go-fzf",
-    StarredAt: (string) (len=10) "2025-03-26"
+    Repo: (string) (len=30) "redinger/validation_reflection",
+    Description: (string) (len=49) "This plugin adds reflective access to validations",
+    URL: (string) (len=49) "https://github.com/redinger/validation_reflection",
+    StarredAt: (string) (len=10) "2008-06-05"
   },
   (github.Star) {
     Stargazer: (string) (len=7) "rwjblue",
-    Repo: (string) (len=27) "langchain-ai/agent-protocol",
+    Repo: (string) (len=14) "jarib/celerity",
+    Description: (string) (len=37) "This project is no longer maintained.",
+    URL: (string) (len=33) "https://github.com/jarib/celerity",
+    StarredAt: (string) (len=10) "2008-06-05"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=10) "rails/thor",
+    Description: (string) (len=64) "Thor is a toolkit for building powerful command-line interfaces.",
+    URL: (string) (len=29) "https://github.com/rails/thor",
+    StarredAt: (string) (len=10) "2008-06-05"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=30) "activemerchant/active_merchant",
+    Description: (string) (len=259) "Active Merchant is a simple payment abstraction library extracted from Shopify. The aim of the project is to feel natural to Ruby users and to abstract as many parts as possible away from the user to offer a consistent interface across all supported gateways.",
+    URL: (string) (len=49) "https://github.com/activemerchant/active_merchant",
+    StarredAt: (string) (len=10) "2008-06-05"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=21) "rails/ssl_requirement",
+    Description: (string) (len=78) "NOTICE: official repository moved to https://github.com/retr0h/ssl_requirement",
+    URL: (string) (len=40) "https://github.com/rails/ssl_requirement",
+    StarredAt: (string) (len=10) "2008-06-05"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=29) "erik-megarad/negative-captcha",
+    Description: (string) (len=86) "A plugin to make the process of creating a negative captcha in Rails much less painful",
+    URL: (string) (len=48) "https://github.com/erik-megarad/negative-captcha",
+    StarredAt: (string) (len=10) "2008-06-05"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=22) "thoughtbot/factory_bot",
+    Description: (string) (len=51) "A library for setting up Ruby objects as test data.",
+    URL: (string) (len=41) "https://github.com/thoughtbot/factory_bot",
+    StarredAt: (string) (len=10) "2008-06-05"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=13) "rubber/rubber",
+    Description: (string) (len=159) "A capistrano/rails plugin that makes it easy to deploy/manage/scale to various service providers, including EC2, DigitalOcean, vSphere, and bare metal servers.",
+    URL: (string) (len=32) "https://github.com/rubber/rubber",
+    StarredAt: (string) (len=10) "2008-06-05"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=18) "jicksta/adhearsion",
+    Description: (string) (len=72) "Open-source framework for writing voice-enabled applications using Ruby.",
+    URL: (string) (len=37) "https://github.com/jicksta/adhearsion",
+    StarredAt: (string) (len=10) "2008-06-07"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=27) "timcharper/role_requirement",
+    Description: (string) (len=266) "Simple role based security for restful_authentication\n\nI am no longer involved in this project. If you are interested in becoming the new maintainer and making it your own, please contact me. I will no longer be responding to bug reports or questions.\n\nThanks,\n\nTim\n",
+    URL: (string) (len=46) "https://github.com/timcharper/role_requirement",
+    StarredAt: (string) (len=10) "2008-06-12"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=15) "eschulte/rinari",
+    Description: (string) (len=63) "Rinari Is Not A Rails IDE (it is an Emacs minor mode for Rails)",
+    URL: (string) (len=34) "https://github.com/eschulte/rinari",
+    StarredAt: (string) (len=10) "2008-06-13"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=17) "starling/starling",
+    Description: (string) (len=68) "Starling Message Queue - please contribute if you want commit access",
+    URL: (string) (len=36) "https://github.com/starling/starling",
+    StarredAt: (string) (len=10) "2008-06-24"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=25) "pluginaweek/state_machine",
+    Description: (string) (len=73) "Adds support for creating state machines for attributes on any Ruby class",
+    URL: (string) (len=44) "https://github.com/pluginaweek/state_machine",
+    StarredAt: (string) (len=10) "2008-06-25"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=15) "auser/poolparty",
+    Description: (string) (len=133) "Run a self-healing, auto-scaled and monitored cloud simply, in the clouds, on nearly any hardware, such as EC2, eucalyptus and vmware",
+    URL: (string) (len=34) "https://github.com/auser/poolparty",
+    StarredAt: (string) (len=10) "2008-06-28"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=20) "brendanlim/mobile-fu",
+    Description: (string) (len=83) "Automatically detect mobile requests from mobile devices in your Rails application.",
+    URL: (string) (len=39) "https://github.com/brendanlim/mobile-fu",
+    StarredAt: (string) (len=10) "2008-07-03"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=22) "sparklemotion/nokogiri",
+    Description: (string) (len=78) "Nokogiri (鋸) makes it easy and painless to work with XML and HTML from Ruby.",
+    URL: (string) (len=41) "https://github.com/sparklemotion/nokogiri",
+    StarredAt: (string) (len=10) "2008-07-14"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=9) "taf2/curb",
+    Description: (string) (len=25) "Ruby bindings for libcurl",
+    URL: (string) (len=28) "https://github.com/taf2/curb",
+    StarredAt: (string) (len=10) "2008-07-15"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=27) "joshuaclayton/blueprint-css",
+    Description: (string) (len=66) "A CSS framework that aims to cut down on your CSS development time",
+    URL: (string) (len=46) "https://github.com/joshuaclayton/blueprint-css",
+    StarredAt: (string) (len=10) "2008-08-07"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=21) "jnunemaker/fancy-zoom",
+    Description: (string) (len=68) "[DEAD] Zoomy JavaScript based loosely on Fancy Zoom by Cabel Sasser.",
+    URL: (string) (len=40) "https://github.com/jnunemaker/fancy-zoom",
+    StarredAt: (string) (len=10) "2008-09-02"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=21) "zuriby/jquery.hotkeys",
+    Description: (string) (len=205) "jquery.hotkeys plugin lets you easily add and remove handlers for keyboard events anywhere in your code supporting almost any key combination. It takes one line of code to bind/unbind a hot key combination",
+    URL: (string) (len=40) "https://github.com/zuriby/jquery.hotkeys",
+    StarredAt: (string) (len=10) "2008-09-10"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=18) "jaywhy/pdf-stamper",
+    Description: (string) (len=50) "Super cool PDF templates using iText's PdfStamper.",
+    URL: (string) (len=37) "https://github.com/jaywhy/pdf-stamper",
+    StarredAt: (string) (len=10) "2008-09-11"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=23) "jamesgolick/timeline_fu",
     Description: (string) "",
-    URL: (string) (len=46) "https://github.com/langchain-ai/agent-protocol",
-    StarredAt: (string) (len=10) "2025-03-25"
+    URL: (string) (len=42) "https://github.com/jamesgolick/timeline_fu",
+    StarredAt: (string) (len=10) "2008-09-30"
   },
   (github.Star) {
     Stargazer: (string) (len=7) "rwjblue",
-    Repo: (string) (len=13) "deanishe/awgo",
-    Description: (string) (len=37) "Go library for Alfred 3 + 4 workflows",
-    URL: (string) (len=32) "https://github.com/deanishe/awgo",
-    StarredAt: (string) (len=10) "2025-03-25"
+    Repo: (string) (len=22) "thedonvaughn/queue-tip",
+    Description: (string) (len=104) "Asterisk Queue Reporting, Analysis, and Realtime Monitoring - designed using the Ruby on Rails framework",
+    URL: (string) (len=41) "https://github.com/thedonvaughn/queue-tip",
+    StarredAt: (string) (len=10) "2008-10-02"
   },
   (github.Star) {
     Stargazer: (string) (len=7) "rwjblue",
-    Repo: (string) (len=36) "jopemachine/alfred-chromium-workflow",
-    Description: (string) (len=44) "Chromium based browser workflow for Alfred 5",
-    URL: (string) (len=55) "https://github.com/jopemachine/alfred-chromium-workflow",
-    StarredAt: (string) (len=10) "2025-03-25"
+    Repo: (string) (len=24) "thoughtbot/limerick_rake",
+    Description: (string) (len=34) "A collection of useful rake tasks.",
+    URL: (string) (len=43) "https://github.com/thoughtbot/limerick_rake",
+    StarredAt: (string) (len=10) "2008-10-06"
   },
   (github.Star) {
     Stargazer: (string) (len=7) "rwjblue",
-    Repo: (string) (len=10) "sharkdp/fd",
-    Description: (string) (len=54) "A simple, fast and user-friendly alternative to 'find'",
-    URL: (string) (len=29) "https://github.com/sharkdp/fd",
-    StarredAt: (string) (len=10) "2025-03-24"
+    Repo: (string) (len=22) "rubycas/rubycas-server",
+    Description: (string) (len=113) "Provides single sign-on authentication for web applications, implementing the server-end of Jasig's CAS protocol.",
+    URL: (string) (len=41) "https://github.com/rubycas/rubycas-server",
+    StarredAt: (string) (len=10) "2008-10-09"
   },
   (github.Star) {
     Stargazer: (string) (len=7) "rwjblue",
-    Repo: (string) (len=16) "uutils/diffutils",
-    Description: (string) (len=40) "Drop-in replacement of diffutils in Rust",
-    URL: (string) (len=35) "https://github.com/uutils/diffutils",
-    StarredAt: (string) (len=10) "2025-03-24"
+    Repo: (string) (len=16) "scrubber/scrubyt",
+    Description: (string) (len=61) "A simple to learn and use, yet powerful web scraping toolkit!",
+    URL: (string) (len=35) "https://github.com/scrubber/scrubyt",
+    StarredAt: (string) (len=10) "2008-10-19"
   },
   (github.Star) {
     Stargazer: (string) (len=7) "rwjblue",
-    Repo: (string) (len=16) "uutils/coreutils",
-    Description: (string) (len=48) "Cross-platform Rust rewrite of the GNU coreutils",
-    URL: (string) (len=35) "https://github.com/uutils/coreutils",
-    StarredAt: (string) (len=10) "2025-03-24"
+    Repo: (string) (len=10) "redox/rbdb",
+    Description: (string) (len=31) "A DB interface written in Rails",
+    URL: (string) (len=29) "https://github.com/redox/rbdb",
+    StarredAt: (string) (len=10) "2008-10-21"
   },
   (github.Star) {
     Stargazer: (string) (len=7) "rwjblue",
-    Repo: (string) (len=29) "release-it-plugins/workspaces",
-    Description: (string) (len=59) "A release-it plugin for publishing projects with workspaces",
-    URL: (string) (len=48) "https://github.com/release-it-plugins/workspaces",
-    StarredAt: (string) (len=10) "2025-03-23"
+    Repo: (string) (len=16) "p8/table_builder",
+    Description: (string) (len=85) "Rails builder for creating tables and calendars inspired by ActionView's FormBuilder.",
+    URL: (string) (len=35) "https://github.com/p8/table_builder",
+    StarredAt: (string) (len=10) "2008-11-03"
   },
   (github.Star) {
     Stargazer: (string) (len=7) "rwjblue",
-    Repo: (string) (len=15) "malleatus/vadnu",
-    Description: (string) (len=85) "What's next? A repo for supporting and documenting the PKM for @hjdivad and @rwjblue.",
-    URL: (string) (len=34) "https://github.com/malleatus/vadnu",
-    StarredAt: (string) (len=10) "2025-03-23"
+    Repo: (string) (len=24) "topfunky/calendar_helper",
+    Description: (string) (len=35) "Calendar-generating plugin for Ruby",
+    URL: (string) (len=43) "https://github.com/topfunky/calendar_helper",
+    StarredAt: (string) (len=10) "2008-11-10"
   },
   (github.Star) {
     Stargazer: (string) (len=7) "rwjblue",
-    Repo: (string) (len=25) "malleatus/shared_binutils",
-    Description: (string) (len=57) "Shared crates for consumption in custom dotfiles binutils",
-    URL: (string) (len=44) "https://github.com/malleatus/shared_binutils",
-    StarredAt: (string) (len=10) "2025-03-23"
+    Repo: (string) (len=29) "technomancy/emacs-starter-kit",
+    Description: (string) (len=34) "[ARCHIVED] this is ancient history",
+    URL: (string) (len=48) "https://github.com/technomancy/emacs-starter-kit",
+    StarredAt: (string) (len=10) "2008-11-18"
   },
   (github.Star) {
     Stargazer: (string) (len=7) "rwjblue",
-    Repo: (string) (len=34) "tcmmichaelb139/obsidian-tokyonight",
-    Description: (string) (len=30) "Tokyo Night theme for Obsidian",
-    URL: (string) (len=53) "https://github.com/tcmmichaelb139/obsidian-tokyonight",
-    StarredAt: (string) (len=10) "2025-03-22"
+    Repo: (string) (len=22) "rubycas/rubycas-client",
+    Description: (string) (len=136) "Ruby  client for Yale's Central Authentication Service protocol -- an open source enterprise single sign on system for web applications.",
+    URL: (string) (len=41) "https://github.com/rubycas/rubycas-client",
+    StarredAt: (string) (len=10) "2008-11-18"
   },
   (github.Star) {
     Stargazer: (string) (len=7) "rwjblue",
-    Repo: (string) (len=26) "mirnovov/obsidian-homepage",
-    Description: (string) (len=112) "An Obsidian plugin that opens a specified note, canvas, or workspace on startup, instead of the most recent one.",
-    URL: (string) (len=45) "https://github.com/mirnovov/obsidian-homepage",
-    StarredAt: (string) (len=10) "2025-03-22"
+    Repo: (string) (len=10) "mikel/mail",
+    Description: (string) (len=26) "A Really Ruby Mail Library",
+    URL: (string) (len=29) "https://github.com/mikel/mail",
+    StarredAt: (string) (len=10) "2008-11-22"
   },
   (github.Star) {
     Stargazer: (string) (len=7) "rwjblue",
-    Repo: (string) (len=29) "aaaaalexis/obsidian-cupertino",
-    Description: (string) (len=108) "A native look and feel Obsidian theme designed for a clean, focused, and mobile-friendly writing experience.",
-    URL: (string) (len=48) "https://github.com/aaaaalexis/obsidian-cupertino",
-    StarredAt: (string) (len=10) "2025-03-22"
+    Repo: (string) (len=20) "jsgoecke/call-tester",
+    Description: (string) (len=94) "Adhearsion component to generate a flood of test calls to another telephony system for testing",
+    URL: (string) (len=39) "https://github.com/jsgoecke/call-tester",
+    StarredAt: (string) (len=10) "2008-12-05"
   },
   (github.Star) {
     Stargazer: (string) (len=7) "rwjblue",
-    Repo: (string) (len=16) "wdanilo/crabtime",
-    Description: (string) "",
-    URL: (string) (len=35) "https://github.com/wdanilo/crabtime",
-    StarredAt: (string) (len=10) "2025-03-22"
+    Repo: (string) (len=13) "maccman/saasy",
+    Description: (string) (len=27) "Rails SaaS and SSO solution",
+    URL: (string) (len=32) "https://github.com/maccman/saasy",
+    StarredAt: (string) (len=10) "2008-12-18"
   },
   (github.Star) {
     Stargazer: (string) (len=7) "rwjblue",
-    Repo: (string) (len=26) "Feel-ix-343/markdown-oxide",
-    Description: (string) (len=15) "PKM for the LSP",
-    URL: (string) (len=45) "https://github.com/Feel-ix-343/markdown-oxide",
-    StarredAt: (string) (len=10) "2025-03-14"
+    Repo: (string) (len=17) "tj/terminal-table",
+    Description: (string) (len=52) "Ruby ASCII Table Generator, simple and feature rich.",
+    URL: (string) (len=36) "https://github.com/tj/terminal-table",
+    StarredAt: (string) (len=10) "2009-01-07"
   },
   (github.Star) {
     Stargazer: (string) (len=7) "rwjblue",
-    Repo: (string) (len=19) "watchexec/watchexec",
-    Description: (string) (len=51) "Executes commands in response to file modifications",
-    URL: (string) (len=38) "https://github.com/watchexec/watchexec",
-    StarredAt: (string) (len=10) "2025-03-12"
+    Repo: (string) (len=15) "sinatra/sinatra",
+    Description: (string) (len=67) "Classy web-development dressed in a DSL (official / canonical repo)",
+    URL: (string) (len=34) "https://github.com/sinatra/sinatra",
+    StarredAt: (string) (len=10) "2009-01-14"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=24) "Shougo/neocomplcache.vim",
+    Description: (string) (len=40) "Ultimate auto-completion system for Vim.",
+    URL: (string) (len=43) "https://github.com/Shougo/neocomplcache.vim",
+    StarredAt: (string) (len=10) "2009-01-16"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=15) "NUARIG/surveyor",
+    Description: (string) (len=97) "A Rails gem that lets you code surveys, questionnaires, quizzes, etc... and add them to your app.",
+    URL: (string) (len=34) "https://github.com/NUARIG/surveyor",
+    StarredAt: (string) (len=10) "2009-01-23"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=29) "adhearsion/restful_adhearsion",
+    Description: (string) (len=57) "Ruby library for consuming the Adhearsion RESTful RPC API",
+    URL: (string) (len=48) "https://github.com/adhearsion/restful_adhearsion",
+    StarredAt: (string) (len=10) "2009-02-04"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=30) "adhearsion/restful_clicktocall",
+    Description: (string) (len=89) "An example Adhearsion component performing a Click to Call via the Adhearsion RESTful API",
+    URL: (string) (len=49) "https://github.com/adhearsion/restful_clicktocall",
+    StarredAt: (string) (len=10) "2009-02-04"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=18) "ricardochimal/taps",
+    Description: (string) (len=33) "simple database import/export app",
+    URL: (string) (len=37) "https://github.com/ricardochimal/taps",
+    StarredAt: (string) (len=10) "2009-02-07"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=21) "jsgoecke/event_logger",
+    Description: (string) (len=96) "Example component for Adhearsion showing how to log events using the event subsystem 'events.rb'",
+    URL: (string) (len=40) "https://github.com/jsgoecke/event_logger",
+    StarredAt: (string) (len=10) "2009-02-12"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=14) "javan/whenever",
+    Description: (string) (len=17) "Cron jobs in Ruby",
+    URL: (string) (len=33) "https://github.com/javan/whenever",
+    StarredAt: (string) (len=10) "2009-02-16"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=11) "szimek/efax",
+    Description: (string) (len=53) "Ruby library for accessing the eFax Developer service",
+    URL: (string) (len=30) "https://github.com/szimek/efax",
+    StarredAt: (string) (len=10) "2009-02-16"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=17) "typhoeus/typhoeus",
+    Description: (string) (len=68) " Typhoeus wraps libcurl in order to make fast and reliable requests.",
+    URL: (string) (len=36) "https://github.com/typhoeus/typhoeus",
+    StarredAt: (string) (len=10) "2009-02-18"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=27) "engineyard/ey-cloud-recipes",
+    Description: (string) (len=128) "A starter repo for custom chef recipes on EY's cloud platform.  These are for reference, and do not indicate a supported status.",
+    URL: (string) (len=46) "https://github.com/engineyard/ey-cloud-recipes",
+    StarredAt: (string) (len=10) "2009-02-20"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=16) "brynary/rack-bug",
+    Description: (string) (len=65) "Debugging toolbar for Rack applications implemented as middleware",
+    URL: (string) (len=35) "https://github.com/brynary/rack-bug",
+    StarredAt: (string) (len=10) "2009-03-09"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=18) "igrigorik/em-proxy",
+    Description: (string) (len=94) "EventMachine Proxy DSL for writing high-performance transparent / intercepting proxies in Ruby",
+    URL: (string) (len=37) "https://github.com/igrigorik/em-proxy",
+    StarredAt: (string) (len=10) "2009-04-16"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=17) "troelskn/handsoap",
+    Description: (string) (len=55) "Handsoap is a library for creating SOAP clients in Ruby",
+    URL: (string) (len=36) "https://github.com/troelskn/handsoap",
+    StarredAt: (string) (len=10) "2009-04-22"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=7) "fog/fog",
+    Description: (string) (len=32) "The Ruby cloud services library.",
+    URL: (string) (len=26) "https://github.com/fog/fog",
+    StarredAt: (string) (len=10) "2009-05-18"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=15) "ddollar/shoebox",
+    Description: (string) (len=62) "Abandoned in favor of http://github.com/ddollar/asset-resource",
+    URL: (string) (len=34) "https://github.com/ddollar/shoebox",
+    StarredAt: (string) (len=10) "2009-05-20"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=24) "Homebrew/legacy-homebrew",
+    Description: (string) (len=54) "💀 The former home of Homebrew/homebrew (deprecated)",
+    URL: (string) (len=43) "https://github.com/Homebrew/legacy-homebrew",
+    StarredAt: (string) (len=10) "2009-05-20"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=16) "apache/cassandra",
+    Description: (string) (len=18) "Apache Cassandra®",
+    URL: (string) (len=35) "https://github.com/apache/cassandra",
+    StarredAt: (string) (len=10) "2009-05-21"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=22) "mtrudel/man_or_machine",
+    Description: (string) (len=142) "A handy-dandy Adhearsion component that detects an answering machine at the far end of a call and facilitates differing behaviours as a result",
+    URL: (string) (len=41) "https://github.com/mtrudel/man_or_machine",
+    StarredAt: (string) (len=10) "2009-05-27"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=26) "laserlemon/vestal_versions",
+    Description: (string) (len=55) "Keep a DRY history of your ActiveRecord models' changes",
+    URL: (string) (len=45) "https://github.com/laserlemon/vestal_versions",
+    StarredAt: (string) (len=10) "2009-06-02"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=16) "roidrage/crumble",
+    Description: (string) (len=80) "How did these breadcrumbs in your Rails application? Oh right, with this plugin!",
+    URL: (string) (len=35) "https://github.com/roidrage/crumble",
+    StarredAt: (string) (len=10) "2009-06-09"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=16) "jsgoecke/surveys",
+    Description: (string) (len=62) "An example Adhearsion component for creating post call surveys",
+    URL: (string) (len=35) "https://github.com/jsgoecke/surveys",
+    StarredAt: (string) (len=10) "2009-06-15"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=12) "TwP/servolux",
+    Description: (string) (len=35) "Threads : Servers : Forks : Daemons",
+    URL: (string) (len=31) "https://github.com/TwP/servolux",
+    StarredAt: (string) (len=10) "2009-06-17"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=15) "net-ssh/net-ssh",
+    Description: (string) (len=54) "Pure Ruby implementation of an SSH (protocol 2) client",
+    URL: (string) (len=34) "https://github.com/net-ssh/net-ssh",
+    StarredAt: (string) (len=10) "2009-06-19"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=22) "cassandra-rb/cassandra",
+    Description: (string) (len=52) "A Ruby client for the Cassandra distributed database",
+    URL: (string) (len=41) "https://github.com/cassandra-rb/cassandra",
+    StarredAt: (string) (len=10) "2009-06-30"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=15) "judofyr/parkaby",
+    Description: (string) (len=23) "ParseTree meets Markaby",
+    URL: (string) (len=34) "https://github.com/judofyr/parkaby",
+    StarredAt: (string) (len=10) "2009-07-04"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=25) "jamesgolick/observational",
+    Description: (string) (len=73) "Use the observer pattern to better divide your objects' responsibilities.",
+    URL: (string) (len=44) "https://github.com/jamesgolick/observational",
+    StarredAt: (string) (len=10) "2009-07-16"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=19) "sandrods/odf-report",
+    Description: (string) (len=69) "Generates ODF files, given a template (.odt) and data, replacing tags",
+    URL: (string) (len=38) "https://github.com/sandrods/odf-report",
+    StarredAt: (string) (len=10) "2009-07-28"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=7) "rvm/rvm",
+    Description: (string) (len=30) "Ruby enVironment Manager (RVM)",
+    URL: (string) (len=26) "https://github.com/rvm/rvm",
+    StarredAt: (string) (len=10) "2009-08-24"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=15) "ohmyzsh/ohmyzsh",
+    Description: (string) (len=345) "🙃   A delightful community-driven (with 2,400+ contributors) framework for managing your zsh configuration. Includes 300+ optional plugins (rails, git, macOS, hub, docker, homebrew, node, php, python, etc), 140+ themes to spice up your morning, and an auto-update tool that makes it easy to keep up with the latest updates from the community.",
+    URL: (string) (len=34) "https://github.com/ohmyzsh/ohmyzsh",
+    StarredAt: (string) (len=10) "2009-08-28"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=17) "heartcombo/devise",
+    Description: (string) (len=55) "Flexible authentication solution for Rails with Warden.",
+    URL: (string) (len=36) "https://github.com/heartcombo/devise",
+    StarredAt: (string) (len=10) "2009-09-16"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=12) "philc/vimium",
+    Description: (string) (len=21) "The hacker's browser.",
+    URL: (string) (len=31) "https://github.com/philc/vimium",
+    StarredAt: (string) (len=10) "2009-09-20"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=13) "backup/backup",
+    Description: (string) (len=55) "Easy full stack backup operations on UNIX-like systems.",
+    URL: (string) (len=32) "https://github.com/backup/backup",
+    StarredAt: (string) (len=10) "2009-10-01"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=21) "twitter/thrift_client",
+    Description: (string) (len=71) "A Thrift client wrapper that encapsulates some common failover behavior",
+    URL: (string) (len=40) "https://github.com/twitter/thrift_client",
+    StarredAt: (string) (len=10) "2009-10-02"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=20) "sdsykes/slim_scrooge",
+    Description: (string) (len=56) "SlimScrooge heavily optimises your database interactions",
+    URL: (string) (len=39) "https://github.com/sdsykes/slim_scrooge",
+    StarredAt: (string) (len=10) "2009-10-18"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=15) "bblimke/webmock",
+    Description: (string) (len=71) "Library for stubbing and setting expectations on HTTP requests in Ruby.",
+    URL: (string) (len=34) "https://github.com/bblimke/webmock",
+    StarredAt: (string) (len=10) "2009-11-06"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=16) "net-ssh/net-sftp",
+    Description: (string) (len=59) "Pure Ruby implementation of an SFTP (protocols 1-6) client.",
+    URL: (string) (len=35) "https://github.com/net-ssh/net-sftp",
+    StarredAt: (string) (len=10) "2009-11-17"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=23) "shenoudab/active_device",
+    Description: (string) (len=22) "Mobile Device Detector",
+    URL: (string) (len=42) "https://github.com/shenoudab/active_device",
+    StarredAt: (string) (len=10) "2009-11-26"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=23) "rest-client/rest-client",
+    Description: (string) (len=95) "Simple HTTP and REST client for Ruby, inspired by microframework syntax for specifying actions.",
+    URL: (string) (len=42) "https://github.com/rest-client/rest-client",
+    StarredAt: (string) (len=10) "2009-12-07"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=18) "lostisland/faraday",
+    Description: (string) (len=77) "Simple, but flexible HTTP client library, with support for multiple backends.",
+    URL: (string) (len=37) "https://github.com/lostisland/faraday",
+    StarredAt: (string) (len=10) "2009-12-10"
+  },
+  (github.Star) {
+    Stargazer: (string) (len=7) "rwjblue",
+    Repo: (string) (len=12) "tbtlr/gordon",
+    Description: (string) (len=58) "An open source Flash™ runtime written in pure JavaScript",
+    URL: (string) (len=31) "https://github.com/tbtlr/gordon",
+    StarredAt: (string) (len=10) "2009-12-23"
   }
 }

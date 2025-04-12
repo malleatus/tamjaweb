@@ -16,6 +16,7 @@ type GitHubTestSuite struct {
 
 	originalHomeDir           string
 	tempHomeDir               string
+	originalMaxPages          int
 	originalExecRunner        ExecRunner
 	originalBuildGitHubClient func() *github.Client
 	mockRunner                *mockRunner
@@ -53,10 +54,14 @@ func (s *GitHubTestSuite) SetupTest() {
 	err = os.Setenv("HOME", tempHomeDir)
 	s.NoError(err)
 	s.tempHomeDir = tempHomeDir
+
+	s.originalMaxPages = MaxPages
+	MaxPages = 2
 }
 
 // TearDownTest runs after each test in the suite.
 func (s *GitHubTestSuite) TearDownTest() {
+	MaxPages = s.originalMaxPages
 	DefaultExecRunner = s.originalExecRunner
 	BuildGitHubClient = s.originalBuildGitHubClient
 
