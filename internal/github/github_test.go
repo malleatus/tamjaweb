@@ -150,6 +150,59 @@ func (s *GitHubTestSuite) TestGetAllStarsWithVCR() {
 	cupaloy.SnapshotT(s.T(), stars)
 }
 
+func (s *GitHubTestSuite) TestGetAllStarsFiltersToSpecifiedUser() {
+	stars := []Star{
+		{
+			Stargazer:   "rwjblue",
+			Repo:        "malleatus/tamjaweb",
+			Description: "A web app",
+			URL:         "https://github.com/malleatus/tamjaweb",
+			StarredAt:   "2023-01-01",
+		},
+		{
+			Stargazer:   "otheruser",
+			Repo:        "otheruser/repo",
+			Description: "Another repo",
+			URL:         "https://github.com/otheruser/repo",
+			StarredAt:   "2023-02-02",
+		},
+		{
+			Stargazer:   "rwjblue",
+			Repo:        "emberjs/ember.js",
+			Description: "Ember.js framework",
+			URL:         "https://github.com/emberjs/ember.js",
+			StarredAt:   "2023-03-03",
+		},
+	}
+
+	cache, err := getStarsCache()
+	s.NoError(err)
+
+	err = cache.Write(stars)
+	s.NoError(err)
+
+	stars, err = GetAllStars("rwjblue")
+	s.NoError(err)
+	s.Equal(2, len(stars), "Should only return stars for rwjblue")
+
+	s.Equal(stars, []Star{
+		{
+			Stargazer:   "rwjblue",
+			Repo:        "malleatus/tamjaweb",
+			Description: "A web app",
+			URL:         "https://github.com/malleatus/tamjaweb",
+			StarredAt:   "2023-01-01",
+		},
+		{
+			Stargazer:   "rwjblue",
+			Repo:        "emberjs/ember.js",
+			Description: "Ember.js framework",
+			URL:         "https://github.com/emberjs/ember.js",
+			StarredAt:   "2023-03-03",
+		},
+	})
+}
+
 func TestGitHubTestSuite(t *testing.T) {
 	suite.Run(t, new(GitHubTestSuite))
 }

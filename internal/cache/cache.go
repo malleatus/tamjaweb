@@ -57,7 +57,7 @@ func (c *CacheStore[T]) Read() ([]T, error) {
 	return items, nil
 }
 
-// Write stores items to the cache
+// Write stores items to the cache. Whatever is in the cache will be overridden.
 func (c *CacheStore[T]) Write(items []T) error {
 	data, err := json.MarshalIndent(items, "", "  ")
 	if err != nil {
