@@ -11,9 +11,9 @@ import (
 	"github.com/malleatus/tamjaweb/internal/browser"
 )
 
-var searchTerm string
-
 func NewSearchCommand(opts *internalBookmarks.Options) *cobra.Command {
+	var searchTerm string
+
 	cmd := &cobra.Command{
 		Use:   "search",
 		Short: "Search for bookmarks",

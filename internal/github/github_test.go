@@ -208,6 +208,214 @@ func (s *GitHubTestSuite) TestGetAllStarsFiltersToSpecifiedUser() {
 	})
 }
 
+func (s *GitHubTestSuite) TestFilterStarsByTerm() {
+	stars := []Star{
+		{
+			Stargazer:   "user1",
+			Repo:        "owner1/repo1",
+			Description: "A test repository",
+			URL:         "https://github.com/owner1/repo1",
+			StarredAt:   "2023-01-01",
+		},
+		{
+			Stargazer:   "user1",
+			Repo:        "owner2/another-repo",
+			Description: "Another test repository",
+			URL:         "https://github.com/owner2/another-repo",
+			StarredAt:   "2023-02-01",
+		},
+		{
+			Stargazer:   "user2",
+			Repo:        "owner3/golang-project",
+			Description: "A Go programming project",
+			URL:         "https://github.com/owner3/golang-project",
+			StarredAt:   "2023-03-01",
+		},
+	}
+
+	testCases := []struct {
+		name          string
+		searchTerm    string
+		expectedStars []struct {
+			repo        string
+			description string
+			url         string
+			starredAt   string
+			stargazer   string
+		}
+	}{
+		{
+			name:       "Filter by repo exact match",
+			searchTerm: "owner1/repo1",
+			expectedStars: []struct {
+				repo        string
+				description string
+				url         string
+				starredAt   string
+				stargazer   string
+			}{
+				{
+					repo:        "owner1/repo1",
+					description: "A test repository",
+					url:         "https://github.com/owner1/repo1",
+					starredAt:   "2023-01-01",
+					stargazer:   "user1",
+				},
+			},
+		},
+		{
+			name:       "Filter by repo partial match",
+			searchTerm: "another",
+			expectedStars: []struct {
+				repo        string
+				description string
+				url         string
+				starredAt   string
+				stargazer   string
+			}{
+				{
+					repo:        "owner2/another-repo",
+					description: "Another test repository",
+					url:         "https://github.com/owner2/another-repo",
+					starredAt:   "2023-02-01",
+					stargazer:   "user1",
+				},
+			},
+		},
+		{
+			name:       "Filter by description",
+			searchTerm: "Go programming",
+			expectedStars: []struct {
+				repo        string
+				description string
+				url         string
+				starredAt   string
+				stargazer   string
+			}{
+				{
+					repo:        "owner3/golang-project",
+					description: "A Go programming project",
+					url:         "https://github.com/owner3/golang-project",
+					starredAt:   "2023-03-01",
+					stargazer:   "user2",
+				},
+			},
+		},
+		{
+			name:       "Case insensitive search",
+			searchTerm: "test",
+			expectedStars: []struct {
+				repo        string
+				description string
+				url         string
+				starredAt   string
+				stargazer   string
+			}{
+				{
+					repo:        "owner1/repo1",
+					description: "A test repository",
+					url:         "https://github.com/owner1/repo1",
+					starredAt:   "2023-01-01",
+					stargazer:   "user1",
+				},
+				{
+					repo:        "owner2/another-repo",
+					description: "Another test repository",
+					url:         "https://github.com/owner2/another-repo",
+					starredAt:   "2023-02-01",
+					stargazer:   "user1",
+				},
+			},
+		},
+		{
+			name:       "Filter with fzf style match",
+			searchTerm: "go",
+			expectedStars: []struct {
+				repo        string
+				description string
+				url         string
+				starredAt   string
+				stargazer   string
+			}{
+				{
+					repo:        "owner3/golang-project",
+					description: "A Go programming project",
+					url:         "https://github.com/owner3/golang-project",
+					starredAt:   "2023-03-01",
+					stargazer:   "user2",
+				},
+			},
+		},
+		{
+			name:       "No matches",
+			searchTerm: "nonexistent",
+			expectedStars: []struct {
+				repo        string
+				description string
+				url         string
+				starredAt   string
+				stargazer   string
+			}{},
+		},
+		{
+			name:       "Empty search term matches all",
+			searchTerm: "",
+			expectedStars: []struct {
+				repo        string
+				description string
+				url         string
+				starredAt   string
+				stargazer   string
+			}{
+				{
+					repo:        "owner1/repo1",
+					description: "A test repository",
+					url:         "https://github.com/owner1/repo1",
+					starredAt:   "2023-01-01",
+					stargazer:   "user1",
+				},
+				{
+					repo:        "owner2/another-repo",
+					description: "Another test repository",
+					url:         "https://github.com/owner2/another-repo",
+					starredAt:   "2023-02-01",
+					stargazer:   "user1",
+				},
+				{
+					repo:        "owner3/golang-project",
+					description: "A Go programming project",
+					url:         "https://github.com/owner3/golang-project",
+					starredAt:   "2023-03-01",
+					stargazer:   "user2",
+				},
+			},
+		},
+	}
+
+	for _, tc := range testCases {
+		s.Run(tc.name, func() {
+			result := FilterStarsByTerm(stars, tc.searchTerm)
+
+			s.Equal(len(tc.expectedStars), len(result), "Number of stars with matches")
+
+			if len(tc.expectedStars) == 0 {
+				s.Empty(result, "Result should be empty when no matches")
+				return
+			}
+
+			for i, expectedStar := range tc.expectedStars {
+				if i < len(result) {
+					s.Equal(expectedStar.repo, result[i].Repo, "Star repo at index %d", i)
+					s.Equal(expectedStar.description, result[i].Description, "Star description at index %d", i)
+					s.Equal(expectedStar.url, result[i].URL, "Star URL at index %d", i)
+					s.Equal(expectedStar.starredAt, result[i].StarredAt, "Star starredAt at index %d", i)
+					s.Equal(expectedStar.stargazer, result[i].Stargazer, "Star stargazer at index %d", i)
+				}
+			}
+		})
+	}
+}
+
 func TestGitHubTestSuite(t *testing.T) {
 	suite.Run(t, new(GitHubTestSuite))
 }
