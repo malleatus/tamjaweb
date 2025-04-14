@@ -8,7 +8,9 @@ import (
 	"strings"
 	"time"
 
+	"github.com/charmbracelet/log"
 	"github.com/google/go-github/v70/github"
+	"github.com/malleatus/tamjaweb/internal/fzf"
 	"github.com/olekukonko/tablewriter"
 )
 
@@ -116,6 +118,44 @@ func fetchStars(user string) ([]Star, error) {
 	}
 
 	return stars, nil
+}
+
+// FilterStarsByTerm filters stars using fzf's filter functionality
+// Returns an array of Stars
+func FilterStarsByTerm(stars []Star, term string) []Star {
+	// If term is empty, return all bookmarks
+	if term == "" {
+		return stars
+	}
+
+	// Create inputs for fzf
+	inputs := make([]string, len(stars))
+	for i, star := range stars {
+		// Create searchable text combining all fields
+		inputs[i] = fmt.Sprintf("%d\t%s\t%s",
+			i,
+			star.Repo,
+			star.Description,
+		)
+	}
+
+	// Use the FZF utility to filter
+	matchedIndices, err := fzf.FilterStrings(inputs, term)
+	if err != nil {
+		log.Error("Failed to filter stars", "error", err)
+		var empty []Star
+		return empty
+	}
+
+	// Build filtered bookmarks map
+	filteredStars := make([]Star, 0, len(matchedIndices))
+
+	for _, idx := range matchedIndices {
+		star := stars[idx]
+		filteredStars = append(filteredStars, star)
+	}
+
+	return filteredStars
 }
 
 func PrintStars(stars []Star) (string, error) {
